@@ -1,0 +1,61 @@
+Query Id,Query,Query Category,System Output,Remarks
+Q001,Why do customers escalate to supervisors?,Escalation Analysis,,Primary causal analysis query
+Q002,What are the most common conversational patterns that lead to escalation?,Escalation Analysis,,Requires multi-call pattern extraction
+Q003,Which escalation calls show repeated service failures before escalation?,Escalation Evidence Retrieval,,Should return call IDs and evidence spans
+Q004,In escalation cases what phrases indicate customer frustration before demanding a manager?,Escalation Linguistic Cues,,Evidence spans should include frustration expressions
+Q005,Why do customers threaten legal action during escalations?,Escalation - Legal Threat,,Should link legal threats to repeated failures and lack of resolution
+Q006,How does poor service recovery contribute to escalations?,Escalation - Service Recovery,,Causal reasoning required
+Q007,Compare escalation causes in healthcare vs banking domains.,Cross-Domain Escalation Comparison,,Should compare conversational structures across domains
+Q008,Which escalation conversations involve repeated agent promises but no resolution?,Escalation Root Cause,,Should retrieve evidence with told it's fixed but it's not
+Q009,What is the relationship between system errors and escalations?,Escalation - System Error,,Causal analysis on system failures leading to escalation
+Q010,Why do customers demand executive intervention instead of supervisor help?,Escalation - Authority Demand,,Focus on trust breakdown and urgency
+Q011,Why do fraud alerts lead to immediate account actions?,Fraud Investigation,,Evidence should show transaction dispute and blocking card
+Q012,What dialogue evidence indicates fraud confirmation in conversations?,Fraud Evidence Retrieval,,Should show customer denying transaction and agent confirming fraud
+Q013,How do agents typically respond when customers report unauthorized charges?,Fraud Response Pattern,,Summarize typical mitigation steps
+Q014,What are the key risk indicators that appear in fraud-related calls?,Fraud Risk Signals,,Extract location mismatch and customer denial cues
+Q015,Why do customers worry about recurring payments after fraud alerts?,Fraud Customer Concern,,Causal link card replacement disrupts autopay
+Q016,What steps in conversation reduce fraud escalation probability?,Fraud Prevention Strategy,,Should highlight reassurance and resolution clarity
+Q017,Why do customers call about delivery investigations?,Delivery Investigation,,Should identify marked delivered but not received
+Q018,What conversational factors lead customers to request replacement shipments?,Delivery Investigation - Replacement,,Evidence should include urgency and missing item
+Q019,Which delivery investigations mention checking neighbors or cameras?,Delivery Investigation Evidence Retrieval,,Evidence chunk extraction required
+Q020,How do delivery investigation calls differ across retail and travel domains?,Cross-Domain Delivery Comparison,,Compare delivery logic and carrier interaction
+Q021,Why do customers request signature confirmation after missing deliveries?,Delivery Investigation - Security,,Should connect theft or misdelivery suspicion
+Q022,What are the most common carrier-related issues mentioned in delivery cases?,Delivery Investigation - Carrier Issues,,Extract UPS OnTrac notes and wrong address suspicion
+Q023,Why do customers experience account access issues after resetting credentials?,Account Access Issues,,Should link to security holds and verification
+Q024,What evidence indicates security holds are triggered in access issue calls?,Account Access Evidence Retrieval,,Must return specific agent explanation lines
+Q025,How do agents restore access when customers fail authentication?,Account Access Resolution,,Should show verification steps and hold removal
+Q026,Why do service interruptions lead to compensation or crediting accounts?,Service Interruptions,,Should link outage duration and inconvenience
+Q027,What dialogue patterns appear in outage calls where customers work from home?,Service Interruptions - Customer Impact,,Extract affecting my job statements
+Q028,How do agents provide temporary workarounds during outages?,Service Interruptions - Workaround,,Evidence includes temporary alternate connection
+Q029,Which service interruption calls include restoration timelines?,Service Interruptions Evidence Retrieval,,Should retrieve estimated restoration time
+Q030,Why do appointment scheduling failures cause customer dissatisfaction?,Appointment Scheduling,,Link missed booking wasted time and urgency
+Q031,What causes appointment records to disappear from the system?,Appointment Scheduling - System Failure,,Should identify sync or software update issue
+Q032,How do agents recover missed appointment scheduling cases?,Appointment Scheduling - Recovery,,Evidence should include rebooking and immediate accommodation
+Q033,Which appointment scheduling calls involve follow-up booking?,Appointment Scheduling Evidence Retrieval,,Should show follow-up appointment being scheduled
+Q034,Why do customers demand confirmation messages after scheduling issues?,Appointment Scheduling - Trust,,Causal link system unreliability causes need for confirmation
+Q035,Why do customers complain about claim denials in insurance calls?,Claim Denial,,Should highlight policy coverage mismatch and denial reason confusion
+Q036,What evidence indicates claim denial was due to coding error?,Claim Denial Evidence Retrieval,,Should retrieve wrong code submitted spans
+Q037,How do billing code mismatches lead to delayed claim approval?,Claim Denial - Process Breakdown,,Explain causal mechanism of code mismatch
+Q038,What emotional cues appear in claim denial conversations?,Claim Denial - Customer Stress,,Evidence includes stressed and financial burden
+Q039,How do agents prevent escalation during claim denial disputes?,Claim Denial - De-escalation,,Should identify reassurance and proactive provider contact
+Q040,Why do customers request refunds instead of replacements?,Refund Analysis,,Should connect dissatisfaction and urgency
+Q041,What conversational evidence shows customers preferring replacement over refund?,Replacement Preference,,Should show replacement instead of refund
+Q042,What are the common triggers of multiple-issue calls?,Multiple Issues Analysis,,Causal explanation of bundled problems
+Q043,How do customers behave differently in multiple-issue calls compared to single-issue calls?,Multiple Issues Comparison,,Should show increased complexity and agent multitasking
+Q044,Which calls show fraud and account updates occurring together?,Multiple Issues Evidence Retrieval,,Should retrieve fraud plus phone update plus 2FA
+Q045,How does handling multiple issues affect customer satisfaction?,Multiple Issues - Satisfaction,,Explain effect of resolution efficiency
+Q046,What is the role of error codes in escalation conversations?,Escalation - Error Codes,,Evidence should show error codes like 3309 or 7721
+Q047,Which escalation calls mention error code explicitly?,Escalation Evidence Retrieval,,Should output call IDs and chunk spans
+Q048,What are the strongest causal drivers of escalation across all escalation calls?,Escalation Root Factor Ranking,,System should rank factors
+Q049,Which escalation cases involve long duration issues weeks or month?,Escalation Time Factor,,Evidence includes three weeks or month
+Q050,What is the link between repeated failed attempts and escalation?,Escalation Causal Link,,Should provide causal chain explanation
+Q051,Follow-up List the call IDs you used for the escalation explanation.,Follow-up (Task2),,Should rely on memory context
+Q052,Follow-up Show me the exact evidence spans for those escalation call IDs.,Follow-up (Task2),,Must return chunk spans and text
+Q053,Follow-up Which factor is most dominant in those calls?,Follow-up (Task2),,Should reuse previous causal factors
+Q054,Follow-up Compare escalation vs fraud conversations in tone and urgency.,Follow-up (Task2),,Requires comparing earlier retrieved contexts
+Q055,Follow-up Give 3 customer quotes showing frustration from earlier results.,Follow-up (Task2),,Must output exact quotes from evidence
+Q056,Follow-up Which agent actions reduced customer anger in the same calls?,Follow-up (Task2),,Should analyze resolution strategies from evidence
+Q057,Follow-up In the escalation calls did customers mention formal complaints?,Follow-up (Task2),,Should answer based on evidence memory
+Q058,Follow-up Which escalation case is the most severe and why?,Follow-up (Task2),,Severity reasoning using previous evidence
+Q059,Follow-up Now switch to delivery investigations and summarize key causal triggers.,Follow-up (Task2),,Should update event context
+Q060,Follow-up Give me evidence chunks for delivery investigations.,Follow-up (Task2),,Should retrieve and cite chunks
